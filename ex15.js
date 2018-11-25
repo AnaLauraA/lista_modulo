@@ -8,7 +8,6 @@ function par(vetor){
     for(i;i<15;i++){
         if (Number(vetor[i]) % 2 == 0){
             soma = Number(vetor[i]) + soma;
-            console.log("comehere");
         }
     } 
     return soma;
