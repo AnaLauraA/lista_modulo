@@ -1,12 +1,14 @@
 function principal(){
-    var num = Number(document.getElementById("num").value);
+    var num = document.getElementById("num").value;
+    console.log(num);
     document.getElementById("resposta").innerHTML = somar(num);
 }
+var i = 0;
+var soma = 0; 
 function somar(n){
-   if(n < 0 ){
-       return ("É negativo");
-   }
-   else{
-       return ("É positivo");
-   }
+    for(i;i<20;i++){
+        console.log(n[i]);
+        soma = Number(n[i]) + soma;
+    }
+    return soma;
 }
